@@ -16,6 +16,7 @@ class App extends Component {
         <NavBar />
         <div className="content">
           <Switch>
+            <Route path="/products/:id" component={ProductDetails} />
             <Route
               path="/products"
               render={props => <Products sortBy="newest" {...props} />}
